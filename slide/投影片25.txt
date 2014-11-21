@@ -1,0 +1,12 @@
+<?php
+if(!isset($_COOKIE['test_cookie'])){
+   $date=strtotime('+10 days',time());
+   setcookie('test_cookie','9527',$date);
+   var_dump('set cookie!');
+}else{
+   var_dump($_COOKIE['test_cookie']);
+}
+
+//將cookie設定為過期，使其被瀏覽器刪除
+//setcookie('test_cookie','',time()-3600);
+?>

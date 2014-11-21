@@ -1,0 +1,16 @@
+<?php
+session_start();
+
+if(!isset($_SESSION['abc']))
+   $_SESSION['abc']=0;
+else
+   $_SESSION['abc']++;
+
+var_dump($_SESSION['abc']);
+?>
+
+<a href=""><button>重新整理</button></a>
+
+<?php
+//session_destroy();
+?>

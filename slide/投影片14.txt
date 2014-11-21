@@ -1,0 +1,24 @@
+<?php
+$a=10;
+$b=20;
+?>
+<?php if ($a > $b): ?>
+   <button>a 大於 b</button>
+<?php elseif ($a == $b): ?> 
+   <button>a 等於 b</button>
+<?php else: ?>
+   <button>a 小於 b</button>
+<?php endif; ?>
+
+<br><br>
+
+<?php
+if($a>$b) {
+   $a*=-1;
+} else {
+   $b*=-1;
+}
+?>
+<button><?=$a?></button>
+<button><?=$b?></button>
+

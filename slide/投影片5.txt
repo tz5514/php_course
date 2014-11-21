@@ -1,0 +1,14 @@
+<?php
+$a=100;
+?>
+
+<h1>段落標題</h1>
+<?php for ($i = 1; $i <= 5; $i++): ?>
+   <p>段落內文<?php echo $i ?></p>
+<?php endfor; ?>
+
+<?php
+$a+=50;
+?>
+
+<button><?php echo $a ?></button>

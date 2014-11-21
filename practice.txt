@@ -1,0 +1,30 @@
+﻿<?php
+$colors=[
+array('color'=>'green','name'=>'綠色'),
+array('color'=>'red','name'=>'紅色'),
+array('color'=>'yellow','name'=>'黃色')
+];
+?>
+<?php if(!isset($_POST['color'])):?>
+<form method="post" action="<?=$_SERVER['PHP_SELF']?>">
+   <select name="color">
+      <?php foreach($colors as $c):?>
+         <option value="<?=$c['color']?>"><?=$c['name']?></option>
+      <?php endforeach;?>
+   </select>
+   <input type="submit">
+</form>
+<?php else:?>
+<button class="<?=$_POST['color']?>-button">按鈕</button>
+<?php endif;?>
+<style>
+.green-button{
+   background-color:#0F9D58;
+}
+.red-button{
+   background-color:#FF5252;
+}
+.yellow-button{
+   background-color:#FFEB3B;
+}
+</style>

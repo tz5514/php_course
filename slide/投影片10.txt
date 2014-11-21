@@ -1,0 +1,27 @@
+<?php
+$b = true;    // Boolean 布林型態
+$i = 123;     // Integer 整數型態
+$f = 12.3;   // Float 浮點數型態
+$s = '123';     // String字串型態
+
+var_dump($b,$i,$f,$s);
+
+$a1 = array(10, 20, 30, 40);
+
+
+$a2 = array();
+$a2[0]=10;
+$a2[1]=20;
+$a2[2]=30;
+$a2[3]=40;
+
+$a3 = array(
+    33 => 'Tony',
+    'A' => 33.06,
+    9527 => array(1, 2),
+);
+
+var_dump($a1,$a2,$a3);
+
+var_dump($n);
+?>

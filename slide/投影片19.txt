@@ -1,0 +1,22 @@
+<?php
+include('test.php');
+loud('你在大聲什麼啦',$abc);
+
+echo '<hr>';
+
+var_dump(isset($abc),isset($xyz));
+
+echo '<hr>';
+
+$arr = array(
+    'name' => '周昱安',
+    'school' => '彰師大',
+    'number' => 'S0154042',
+    'job' => array('學生','開發者')
+);
+var_dump(count($arr));
+var_dump(strlen($arr['number']));
+var_dump(substr($arr['number'],1,5));
+var_dump(substr($arr['number'],-2,2));
+
+?>

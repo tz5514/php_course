@@ -1,0 +1,25 @@
+<?php for($i=1;$i<=5;$i++):?>
+   <button><?=$i?></button>
+<?php endfor?>
+
+<hr>
+
+<?php
+$color_list=array('green','red','yellow');
+?>
+
+<?php foreach($color_list as $color):?>
+   <button class="<?=$color?>-button">I'm a <?=$color?> button.</button><br>
+<?php endforeach;?>
+
+<style>
+.green-button{
+   background-color:#0F9D58;
+}
+.red-button{
+   background-color:#FF5252;
+}
+.yellow-button{
+   background-color:#FFEB3B;
+}
+</style>

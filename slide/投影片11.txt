@@ -1,0 +1,31 @@
+<?php
+echo '$A 字串/$B 字串';
+var_dump('5.123'+'100w9');
+var_dump('5.123'.'100w9');
+var_dump('123'+'456');
+var_dump('123'.'456');
+
+echo '<hr>';
+
+echo '$A 字串/$B 數字';
+var_dump('9527'+3);
+var_dump('9527'.(3));
+var_dump('abc'+689);
+var_dump('100abc'+689);
+
+echo '<hr>';
+
+echo '$A 數字/$B 數字';
+var_dump(100+200);
+var_dump(30+50.99);
+var_dump((30).(50.99));
+
+echo '<hr>';
+
+echo '混合範例';
+var_dump('abc'+(689).'zz');
+var_dump('11abc'+(689).'zz');
+var_dump('11abc'.(689));
+var_dump('11abc'.(689)+'zz');
+var_dump('11abc'.(689)+'zz'.'yyy');
+?>

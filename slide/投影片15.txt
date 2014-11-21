@@ -1,0 +1,21 @@
+<?php 
+$a=true;
+$b='csie';
+?>
+
+<h2><?=($a)?'是':'非'?></h2>
+<button class="big-button <?= ($b=='csie')?'green-button':'red-button' ?>"><?= $b ?></button>
+
+<style>
+.big-button{
+   padding:15px;
+   font-size:20px;
+   color:#FFFFFF;
+}
+.green-button{
+   background-color:#0F9D58;
+}
+.red-button{
+   background-color:#FF5252;
+}
+</style>

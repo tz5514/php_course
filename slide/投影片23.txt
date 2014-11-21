@@ -1,0 +1,19 @@
+<form method="post" action="<?=$_SERVER['PHP_SELF']?>">
+   名字：<input type="text" name="name">
+   <br>性別：
+   <input type="radio" name="sex" value="male" checked>男
+   <input type="radio" name="sex" value="female">女 
+   <br>年級：
+   <select name="grade">
+      <option value="1">大一</option>
+      <option value="2">大二</option>
+      <option value="3">大三</option>
+      <option value="4">大四</option>
+   </select>
+   <br>
+   <input type="submit" value="go">
+</form>
+<?=var_dump($_POST['name'])?>
+<?=var_dump($_POST['sex'])?>
+<?=var_dump($_POST['grade'])?>
+

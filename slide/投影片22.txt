@@ -1,0 +1,6 @@
+<a href="<?=$_SERVER['PHP_SELF']?>?num=S0154042&sex=male">gogogo</a>
+
+<?php
+var_dump($_GET['num']);
+var_dump($_GET['sex']);
+?>

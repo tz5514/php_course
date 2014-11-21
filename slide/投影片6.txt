@@ -1,0 +1,14 @@
+<?php
+//HTML中嵌入PHP的印出
+?>
+<button><?php echo (100 / 5) ?></button>
+<button><?= (100 / 5) ?></button>
+
+<?php
+/*將HTML代碼以字串的形式和變數串接，成為新的字串變數，
+並一次將字串變數印出*/
+echo '<button>'.(100 / 5) .'</button>';?>
+
+<?php 
+var_dump('abc');
+?>
